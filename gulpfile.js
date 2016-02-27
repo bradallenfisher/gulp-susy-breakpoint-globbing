@@ -1,12 +1,12 @@
 var gulp          = require('gulp'),
-    gutil         = require('gulp-util')
-    autoprefixer  = require('gulp-autoprefixer');
-    sourcemaps    = require('gulp-sourcemaps');
-    uglify        = require('gulp-uglify');
+    gutil         = require('gulp-util'),
+    autoprefixer  = require('gulp-autoprefixer'),
+    sourcemaps    = require('gulp-sourcemaps'),
+    uglify        = require('gulp-uglify'),
     jshint        = require('gulp-jshint'),
     sass          = require('gulp-sass'),
     concat        = require('gulp-concat'),
-    sassGlob      = require('gulp-sass-glob');
+    sassGlob      = require('gulp-sass-glob'),
     sourcemaps = require('gulp-sourcemaps'),
 
     input  = {
