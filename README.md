@@ -1,7 +1,10 @@
 ## Gulp Susy Breakpoint Globbing Starter 
 
 ## Project Setup  
-
+First run
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
+```
 1. Clone the repo 
 
 ~~~
