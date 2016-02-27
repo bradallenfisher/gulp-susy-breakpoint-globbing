@@ -3,14 +3,10 @@ var gulp          = require('gulp'),
     autoprefixer  = require('gulp-autoprefixer');
     sourcemaps    = require('gulp-sourcemaps');
     uglify        = require('gulp-uglify');
-    gulpIf        = require('gulp-if');
-    cache         = require('gulp-cache');
-    del           = require('del');
     jshint        = require('gulp-jshint'),
     sass          = require('gulp-sass'),
     concat        = require('gulp-concat'),
     sassGlob      = require('gulp-sass-glob');
-
     sourcemaps = require('gulp-sourcemaps'),
 
     input  = {
@@ -48,7 +44,6 @@ gulp.task('build-js', function() {
   return gulp.src(input.js)
     .pipe(sourcemaps.init())
     .pipe(concat('scripts.min.js'))
-    .pipe(gulpIf('*.js', uglify()))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(output.js));
 });
