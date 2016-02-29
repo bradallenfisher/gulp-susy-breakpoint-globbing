@@ -1,10 +1,15 @@
 ## Gulp Susy Breakpoint Globbing Starter 
 
-## Project Setup  
-First run
+  
+### First you need to setup node on your "server"
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
 ```
+
+### Look Here for how to set up Node Version Manager
+https://github.com/creationix/nvm
+
+## Project Setup
 1. Clone the repo 
 
 ~~~
