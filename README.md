@@ -10,8 +10,24 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | b
 https://github.com/creationix/nvm
 
 Specifically
-In place of a version pointer like "0.10" or "5.0" or "4.2.1", you can use the following special default aliases with nvm install, nvm use, nvm run, nvm exec, nvm which, etc:
+In place of a version pointer like "0.10" or "5.0" or "4.2.1", you can use the following special default aliases with 
 
+```
+nvm install
+```
+
+```
+nvm use
+```
+```
+nvm run
+```
+```
+nvm exec
+```
+```
+nvm which
+```
 ```
 node: this installs the latest version of node
 iojs: this installs the latest version of io.js
