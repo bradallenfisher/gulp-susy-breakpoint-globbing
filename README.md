@@ -28,6 +28,7 @@ nvm exec
 ```
 nvm which
 ```
+## Using these options...
 ```
 node: this installs the latest version of node
 iojs: this installs the latest version of io.js
