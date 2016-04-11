@@ -31,7 +31,7 @@ gulp.task('jshint', function() {
 
 /* compile scss files */
 gulp.task('build-css', function() {
-  return gulp.src('src/scss/**/*.scss')
+  return gulp.src('src/scss/styles.scss')
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass())
