@@ -7,7 +7,6 @@ var gulp          = require('gulp'),
     sass          = require('gulp-sass'),
     concat        = require('gulp-concat'),
     sassGlob      = require('gulp-sass-glob'),
-    sourcemaps = require('gulp-sourcemaps'),
 
     input  = {
       'scss': 'src/scss/**/*.scss',
@@ -31,20 +30,20 @@ gulp.task('jshint', function() {
 
 /* compile scss files */
 gulp.task('build-css', function() {
-  return gulp.src('src/scss/styles.scss')
-    .pipe(sourcemaps.init())
+  return gulp.src('src/scss/**/*.scss')
     .pipe(sassGlob())
     .pipe(sass())
-    .pipe(sourcemaps.write())
+    .pipe(autoprefixer({
+            browsers: ['last 4 versions', '> 5%'],
+            cascade: false
+        }))
     .pipe(gulp.dest(output.css));
 });
 
 /* concat javascript files, minify if --type production */
 gulp.task('build-js', function() {
   return gulp.src(input.js)
-    .pipe(sourcemaps.init())
     .pipe(concat('scripts.min.js'))
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest(output.js));
 });
 
