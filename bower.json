@@ -17,6 +17,7 @@
     "susy": "~2.2.2"
   },
   "devDependencies": {
-    "breakpoint-sass": "~2.5.0"
+    "breakpoint-sass": "~2.5.0",
+    "compass-mixins": "^1.0.2"
   }
 }
