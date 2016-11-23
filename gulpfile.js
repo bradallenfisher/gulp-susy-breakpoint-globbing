@@ -9,7 +9,7 @@ var gulp          = require('gulp'),
     sassGlob      = require('gulp-sass-glob'),
 
     input  = {
-      'scss': 'src/scss/**/*.scss',
+      'scss': 'src/sass/**/*.scss',
       'js': 'src/js/**/*.js',
     },
 
